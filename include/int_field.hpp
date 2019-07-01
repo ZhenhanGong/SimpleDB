@@ -5,7 +5,7 @@ class IntField
 {
 private:
     // TODO how does c++ serialize object
-    static const long serialVersionUID = 1;
+    static const long serialVersionUID = 1l;
     const int value;
 
 public:
