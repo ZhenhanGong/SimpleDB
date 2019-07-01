@@ -1,5 +1,5 @@
-#include "string_field.hpp"
-#include "string_type.hpp"
+#include "field/string_field.hpp"
+#include "field/string_type.hpp"
 
 StringField::StringField(std::string s, int maxSize)
     : maxSize(maxSize) {

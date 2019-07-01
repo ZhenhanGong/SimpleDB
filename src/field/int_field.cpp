@@ -1,5 +1,5 @@
-#include "int_type.hpp"
-#include "int_field.hpp"
+#include "field/int_type.hpp"
+#include "field/int_field.hpp"
 
 IntField::IntField(int i) : value(i) {
     type = new IntType();
