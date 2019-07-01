@@ -1,6 +1,8 @@
+#include "int_type.hpp"
 #include "int_field.hpp"
 
 IntField::IntField(int i) : value(i) {
+    type = new IntType();
 }
 
 int IntField::getValue() {
@@ -8,7 +10,8 @@ int IntField::getValue() {
 }
 
 // TODO impl
-void IntField::getType() {
+Type* IntField::getType() {
+    return type;
 }
 
 // TODO impl

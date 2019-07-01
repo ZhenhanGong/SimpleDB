@@ -1,8 +1,9 @@
 #pragma once
 
 #include <iostream>
+#include "field.hpp"
 
-class StringField
+class StringField : public Field
 {
 private:
     // TODO how to serialize 
@@ -13,7 +14,7 @@ private:
 public:
     StringField(std::string s, int maxSize);
     // TODO impl type
-    void getType();
+    Type* getType();
     std::string getValue();
     std::string toString();
     int hashCode();

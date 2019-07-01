@@ -1,15 +1,18 @@
 #include "string_field.hpp"
+#include "string_type.hpp"
 
 StringField::StringField(std::string s, int maxSize)
     : maxSize(maxSize) {
 
+    type = new StringType();
     if (s.length() > maxSize)
         val = s.substr(0, maxSize);
     else 
         val = s;
 }
 
-void StringField::getType() {
+Type* StringField::getType() {
+    return type;
 }
 
 std::string StringField::getValue() {

@@ -1,7 +1,8 @@
 #pragma once
-#include <iostream>
 
-class IntField
+#include "field.hpp"
+
+class IntField : public Field
 {
 private:
     // TODO how does c++ serialize object
@@ -11,7 +12,7 @@ private:
 public:
     IntField(int i);
     int getValue();
-    void getType();
+    Type* getType();
     bool compare();
     std::string toString();
     int hashCode();
