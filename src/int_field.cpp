@@ -1,4 +1,4 @@
-#include "IntField.hpp"
+#include "int_field.hpp"
 
 IntField::IntField(int i) : value(i) {
 }
