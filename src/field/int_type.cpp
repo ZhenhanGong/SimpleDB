@@ -1,4 +1,4 @@
-#include "field/int_type.hpp"
+#include "int_type.hpp"
 
 int IntType::getLen() {
     return 4;

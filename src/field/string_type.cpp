@@ -1,4 +1,4 @@
-#include "field/string_type.hpp"
+#include "string_type.hpp"
 
 int getLen() {
     return Type::STRING_LEN + 4;
