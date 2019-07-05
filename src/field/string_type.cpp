@@ -1,6 +1,6 @@
 #include "string_type.hpp"
 
-int getLen() {
+int get_len() {
     return Type::STRING_LEN + 4;
 }
 

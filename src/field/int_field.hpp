@@ -6,16 +6,16 @@ class IntField : public Field
 {
 private:
     // TODO how does c++ serialize object
-    static const long serialVersionUID = 1l;
+    static const long serial_version_UID = 1l;
     const int value;
 
 public:
     IntField(int i);
-    int getValue();
-    Type* getType();
+    int get_value();
+    Type* get_type();
     bool compare();
-    std::string toString();
-    int hashCode();
+    std::string to_string();
+    int hash_code();
     bool equals(IntField field);
     void serialize();
 };

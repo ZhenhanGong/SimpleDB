@@ -1,29 +1,29 @@
 #include "string_field.hpp"
 #include "string_type.hpp"
 
-StringField::StringField(std::string s, int maxSize)
-    : maxSize(maxSize) {
+StringField::StringField(std::string s, int max_size)
+    : max_size(max_size) {
 
     type = new StringType();
-    if (s.length() > maxSize)
-        val = s.substr(0, maxSize);
+    if (s.length() > max_size)
+        val = s.substr(0, max_size);
     else 
         val = s;
 }
 
-Type* StringField::getType() {
+Type* StringField::get_type() {
     return type;
 }
 
-std::string StringField::getValue() {
+std::string StringField::get_value() {
     return val;
 }
 
-std::string StringField::toString() {
+std::string StringField::to_string() {
     return val;
 }
 
-int StringField::hashCode() {
+int StringField::hash_code() {
     return 0;
 }
 

@@ -5,12 +5,12 @@ IntField::IntField(int i) : value(i) {
     type = new IntType();
 }
 
-int IntField::getValue() {
+int IntField::get_value() {
     return value;
 }
 
 // TODO impl
-Type* IntField::getType() {
+Type* IntField::get_type() {
     return type;
 }
 
@@ -19,12 +19,12 @@ bool IntField::compare() {
     return true;
 }
 
-std::string IntField::toString() {
+std::string IntField::to_string() {
     return std::to_string(value);
 }
 
 // TODO impl
-int IntField::hashCode() {
+int IntField::hash_code() {
     return 1;
 }
 

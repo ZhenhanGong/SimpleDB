@@ -7,17 +7,17 @@ class StringField : public Field
 {
 private:
     // TODO how to serialize 
-    static const long serialVersionID = 1l;
+    static const long serial_version_UID = 1l;
     std::string val;
-    const int maxSize;
+    const int max_size;
 
 public:
-    StringField(std::string s, int maxSize);
+    StringField(std::string s, int max_size);
     // TODO impl type
-    Type* getType();
-    std::string getValue();
-    std::string toString();
-    int hashCode();
+    Type* get_type();
+    std::string get_value();
+    std::string to_string();
+    int hash_code();
     bool equals(StringField field);
     // TODO how to serialize
     void serialize();

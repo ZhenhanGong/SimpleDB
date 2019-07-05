@@ -1,6 +1,6 @@
 #include "int_type.hpp"
 
-int IntType::getLen() {
+int IntType::get_len() {
     return 4;
 }
 
