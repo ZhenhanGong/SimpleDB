@@ -2,7 +2,8 @@
 
 #include "type.hpp"
 
-class StringType : public Type {
+class StringType : public Type
+{
 public:
     int get_len();
     void parse();

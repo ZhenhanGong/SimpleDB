@@ -3,7 +3,8 @@
 #include <iostream>
 #include "type.hpp"
 
-class Field {
+class Field
+{
 public:
     Type* type;
     virtual void serialze();
