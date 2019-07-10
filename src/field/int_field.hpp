@@ -13,9 +13,9 @@ public:
     IntField(int i);
     int get_value();
     Type* get_type();
-    bool compare();
     std::string to_string();
     int hash_code();
+    bool compare();
     bool equals(IntField field);
     void serialize();
 };

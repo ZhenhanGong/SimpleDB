@@ -11,12 +11,12 @@ StringField::StringField(std::string s, int max_size)
         val = s;
 }
 
-Type* StringField::get_type() {
-    return type;
-}
-
 std::string StringField::get_value() {
     return val;
+}
+
+Type* StringField::get_type() {
+    return type;
 }
 
 std::string StringField::to_string() {
@@ -27,13 +27,13 @@ int StringField::hash_code() {
     return 0;
 }
 
+bool StringField::compare() {
+    return true;
+}
+
 bool StringField::equals(StringField field) {
     return true;
 }
 
 void StringField::serialize() {
-}
-
-bool StringField::compare() {
-    return true;
 }

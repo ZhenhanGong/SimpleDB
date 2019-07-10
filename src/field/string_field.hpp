@@ -13,14 +13,11 @@ private:
 
 public:
     StringField(std::string s, int max_size);
-    // TODO impl type
-    Type* get_type();
     std::string get_value();
+    Type* get_type();
     std::string to_string();
     int hash_code();
-    bool equals(StringField field);
-    // TODO how to serialize
-    void serialize();
-    // TODO operator 
     bool compare();
+    bool equals(StringField field);
+    void serialize();
 };

@@ -14,11 +14,6 @@ Type* IntField::get_type() {
     return type;
 }
 
-// TODO impl
-bool IntField::compare() {
-    return true;
-}
-
 std::string IntField::to_string() {
     return std::to_string(value);
 }
@@ -26,6 +21,11 @@ std::string IntField::to_string() {
 // TODO impl
 int IntField::hash_code() {
     return 1;
+}
+
+// TODO impl
+bool IntField::compare() {
+    return true;
 }
 
 // TODO impl

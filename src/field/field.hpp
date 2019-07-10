@@ -3,14 +3,15 @@
 #include <iostream>
 #include "type.hpp"
 
+// abstract class can not be instantiated
 class Field
 {
 public:
     Type* type;
-    virtual void serialze();
-    virtual bool compare();
-    virtual Type* get_type();
-    virtual int hash_code();
-    virtual bool equals(Field field);
-    virtual std::string to_string();
+    // pure virtual function make a class abstract class
+    virtual Type* get_type() = 0;
+    virtual std::string to_string() = 0;
+    virtual int hash_code() = 0;
+    virtual bool compare() = 0;
+    virtual void serialize() = 0;
 };
