@@ -11,11 +11,11 @@ private:
 
 public:
     IntField(int i);
-    int get_value();
-    Type* get_type();
-    std::string to_string();
-    int hash_code();
-    bool compare();
-    bool equals(IntField field);
-    void serialize();
+    int get_value() const;
+    Type* get_type() const;
+    std::string to_string() const;
+    int hash_code() const;
+    bool compare() const;
+    bool equals(IntField field) const;
+    void serialize() const;
 };

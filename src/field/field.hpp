@@ -9,9 +9,9 @@ class Field
 public:
     Type *type;
     // pure virtual function make a class abstract class
-    virtual Type* get_type() = 0;
-    virtual std::string to_string() = 0;
-    virtual int hash_code() = 0;
-    virtual bool compare() = 0;
-    virtual void serialize() = 0;
+    virtual Type* get_type() const = 0;
+    virtual std::string to_string() const = 0;
+    virtual int hash_code() const = 0;
+    virtual bool compare() const = 0;
+    virtual void serialize() const = 0;
 };
