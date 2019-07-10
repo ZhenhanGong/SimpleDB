@@ -11,6 +11,12 @@ std::string StringType::to_string() const {
     return "string type";
 }
 
+bool StringType::equals(Type *other) const {
+    if (other->to_string() == this->to_string())
+        return true;
+    return false;
+}
+
 // TODO StringType parse()
 /* Field StringType::parse() { */
 /* } */

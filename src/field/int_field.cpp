@@ -9,7 +9,6 @@ int IntField::get_value() const {
     return value;
 }
 
-// TODO impl
 Type* IntField::get_type() const {
     return type;
 }
