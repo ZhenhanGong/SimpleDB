@@ -6,8 +6,8 @@ class IntType : public Type
 {
 public:
     IntType();
-    int get_len();
-    std::string to_string();
+    int get_len() const;
+    std::string to_string() const;
     // TODO IntType:: parse
     /* void parse(); */
 };
