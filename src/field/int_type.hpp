@@ -5,6 +5,8 @@
 class IntType : public Type
 {
 public:
+    IntType();
     int get_len();
-    void parse();
+    // TODO IntType:: parse
+    /* void parse(); */
 };

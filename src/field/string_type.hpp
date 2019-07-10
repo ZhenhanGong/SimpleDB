@@ -5,6 +5,8 @@
 class StringType : public Type
 {
 public:
+    StringType();
     int get_len();
-    void parse();
+    // TODO StringType:: parse()
+    /* void parse(); */
 };

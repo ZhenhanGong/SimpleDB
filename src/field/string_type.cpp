@@ -1,8 +1,12 @@
 #include "string_type.hpp"
 
-int get_len() {
+StringType::StringType() {
+}
+
+int StringType::get_len() {
     return Type::STRING_LEN + 4;
 }
 
-void parse() {
-}
+// TODO StringType parse()
+/* Field StringType::parse() { */
+/* } */
