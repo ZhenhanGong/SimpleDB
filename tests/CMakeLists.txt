@@ -1,7 +1,10 @@
 ADD_DEFINITIONS(-std=c++14)
 
-file(GLOB test_src "" "*.cpp")
-add_executable(test_main ${test_src})
+include_directories("${PROJECT_SOURCE_DIR}/src")
+
+file(GLOB TEST_SRC "" "*.cpp")
+file(GLOB_RECURSE SRC "" "${PROJECT_SOURCE_DIR}/src/field/*.cpp")
+add_executable(test_main ${TEST_SRC} ${SRC})
 target_link_libraries(test_main gtest gtest_main)
 
 # enable_testing()
