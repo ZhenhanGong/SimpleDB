@@ -1,4 +1,3 @@
-#include <iostream>
 #include <gtest/gtest.h>
 #include "field/int_type.hpp"
 #include "field/string_type.hpp"
