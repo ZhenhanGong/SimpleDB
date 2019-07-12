@@ -35,6 +35,7 @@ TEST(test_Type, equals) {
 
 TEST(test_Field, IntField) {
     Field *field = new IntField(1);
+    // TODO
     /* get_type(); */
     /* to_string(); */
     EXPECT_EQ(((IntField *)field)->get_value(), 1);
