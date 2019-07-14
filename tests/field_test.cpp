@@ -35,15 +35,14 @@ TEST(test_Type, equals) {
 
 TEST(test_Field, IntField) {
     Field *field = new IntField(1);
-    // TODO
-    /* get_type(); */
-    /* to_string(); */
     EXPECT_EQ(((IntField *)field)->get_value(), 1);
     EXPECT_EQ(field->get_type()->to_string(), "int type");
+    EXPECT_EQ(field->to_string(), "1");
 }
 
 TEST(test_Field, StringType) {
     Field *field = new StringField("abc", 5);
     EXPECT_EQ(((StringField *)field)->get_value(), "abc");
     EXPECT_EQ(field->get_type()->to_string(), "string type");
+    EXPECT_EQ(field->to_string(), "abc");
 }
