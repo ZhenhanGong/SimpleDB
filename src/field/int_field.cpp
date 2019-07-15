@@ -28,8 +28,8 @@ bool IntField::compare() const {
 }
 
 // TODO impl
-bool IntField::equals(IntField field) const {
-    return true;
+bool IntField::equals(IntField *field) const {
+    return this->get_value() == field->get_value();
 }
 
 // TODO impl

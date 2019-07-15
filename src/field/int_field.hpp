@@ -16,6 +16,6 @@ public:
     std::string to_string() const;
     int hash_code() const;
     bool compare() const;
-    bool equals(IntField field) const;
+    bool equals(IntField *field) const;
     void serialize() const;
 };

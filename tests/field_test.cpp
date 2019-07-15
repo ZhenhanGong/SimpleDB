@@ -35,9 +35,13 @@ TEST(test_Type, equals) {
 
 TEST(test_Field, IntField) {
     Field *field = new IntField(1);
+    Field *field2 = new IntField(1);
+    Field *field3 = new IntField(2);
     EXPECT_EQ(((IntField *)field)->get_value(), 1);
     EXPECT_EQ(field->get_type()->to_string(), "int type");
     EXPECT_EQ(field->to_string(), "1");
+    EXPECT_EQ(((IntField *)field)->equals((IntField *)field2), true);
+    EXPECT_EQ(((IntField *)field)->equals((IntField *)field3), false);
 }
 
 TEST(test_Field, StringType) {
