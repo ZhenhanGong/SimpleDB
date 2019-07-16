@@ -18,6 +18,6 @@ public:
     std::string to_string() const;
     int hash_code() const;
     bool compare() const;
-    bool equals(StringField field) const;
+    bool equals(Field *other_field) const;
     void serialize() const;
 };

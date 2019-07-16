@@ -31,7 +31,7 @@ bool StringField::compare() const {
     return true;
 }
 
-bool StringField::equals(StringField field) const {
+bool StringField::equals(Field *other_field) const {
     return true;
 }
 

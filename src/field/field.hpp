@@ -14,4 +14,5 @@ public:
     virtual int hash_code() const = 0;
     virtual bool compare() const = 0;
     virtual void serialize() const = 0;
+    virtual bool equals(Field *other_field) const = 0;
 };
