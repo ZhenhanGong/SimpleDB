@@ -18,21 +18,6 @@ TEST(test_Type, StringType) {
     EXPECT_EQ(type->to_string(), "string type");
 }
 
-TEST(test_Type, equals) {
-    Type *int_type1 = new IntType();
-    Type *int_type2 = new IntType();
-    Type *str_type1 = new StringType();
-    Type *str_type2 = new StringType();
-    EXPECT_EQ(int_type1->equals(int_type1), true);
-    EXPECT_EQ(int_type1->equals(int_type2), true);
-    EXPECT_EQ(int_type2->equals(int_type1), true);
-    EXPECT_EQ(int_type1->equals(str_type1), false);
-    EXPECT_EQ(str_type1->equals(str_type1), true);
-    EXPECT_EQ(str_type1->equals(str_type2), true);
-    EXPECT_EQ(str_type2->equals(str_type1), true);
-    EXPECT_EQ(str_type2->equals(int_type1), false);
-}
-
 TEST(test_Field, IntField) {
     Field *field = new IntField(1);
     Field *field2 = new IntField(1);
