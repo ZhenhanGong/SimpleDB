@@ -4,12 +4,12 @@
 field/
 
 type.hpp parse()
-why to_string() & equals() ?
-int_type.hpp parse()
-string_type.hpp parse()
+- int_type.hpp
+- string_type.hpp
 
-field.hpp serialize()
-
+field.hpp serialize() compare()
+- int_field.hpp
+- stirng__field.hpp
 
 
 ## tests
