@@ -8,7 +8,7 @@ int StringType::get_len() const {
 }
 
 std::string StringType::to_string() const {
-    return "string type";
+    return STRING_TYPE_STR;
 }
 
 // TODO StringType parse()

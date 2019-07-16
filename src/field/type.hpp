@@ -2,6 +2,9 @@
 
 #include <iostream>
 
+static const std::string INT_TYPE_STR = "int type";
+static const std::string STRING_TYPE_STR = "string type";
+
 // abstract class can not be instantiated
 class Type
 {

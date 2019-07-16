@@ -17,7 +17,6 @@ std::string IntField::to_string() const {
     return std::to_string(value);
 }
 
-// TODO impl
 int IntField::hash_code() const {
     return value;
 }
@@ -29,9 +28,10 @@ bool IntField::compare() const {
 
 // TODO impl
 bool IntField::equals(Field *other_field) const {
-    /* Type *other_type = other_field->get_type(); */
-    /* return this->get_value() == other_field->get_value(); */
-    return true;
+    Type *other_type = other_field->get_type();
+    if (other_type->to_string() != INT_TYPE_STR)
+        return false;
+    return get_value() == ((IntField *)other_field)->get_value();
 }
 
 // TODO impl

@@ -8,7 +8,7 @@ class StringField : public Field
 private:
     // TODO how to serialize 
     static const long serial_version_UID = 1l;
-    std::string val;
+    std::string value;
     const int max_size;
 
 public:
