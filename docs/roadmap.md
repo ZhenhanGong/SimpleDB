@@ -12,7 +12,7 @@ field.hpp serialize() compare()
 - stirng__field.hpp
 
 tuple.hpp
-Tuple item
+Tuple item nested class
 
 
 ## tests
