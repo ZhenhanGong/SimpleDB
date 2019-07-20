@@ -11,7 +11,7 @@ field.hpp serialize() compare()
 - int_field.hpp
 - stirng__field.hpp
 
-tuple.hpp
+tuple.hpp tuple_desc.hpp
 Tuple item nested class
 
 
